@@ -1,0 +1,24 @@
+#include <iostream>
+using  namespace std;
+
+
+int main()
+{
+    srand(time(NULL));
+
+    int matriz [12][12];
+
+    for (int fila = 0; fila < 12; fila++)
+    {
+        for (int columna = 0; columna < 12; columna++)
+        {
+            matriz[fila][columna] = rand() % 2;
+
+            cout << matriz[fila][columna] << " ";
+        }
+
+        cout<<endl;
+    }
+
+   system("pause");
+}
